@@ -15,6 +15,12 @@ namespace ShapeTracker
             Console.WriteLine($"Side 3 of the triange {testTriangle.GetSide3()}");
             Console.WriteLine($"Calculating...");
             Console.WriteLine($"Your triangle is: {testTriangle.CheckType()}");
+            Console.WriteLine("Updating...");
+            testTriangle.SetSide1(44);
+            testTriangle.SetSide2(44);
+            testTriangle.SetSide3(70);
+            Console.WriteLine($"Actually I changed the values of your triangles sides to {testTriangle.GetSide1()} and {testTriangle.GetSide2()} and {testTriangle.GetSide3()}");
+            Console.WriteLine($"Now your triangle is: {testTriangle.CheckType()}.");
         }
     }
 

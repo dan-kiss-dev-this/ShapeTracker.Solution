@@ -32,6 +32,21 @@ namespace ShapeTracker.Models
             return _side3;
         }
 
+        public void SetSide1(int newSide)
+        {
+            _side1 = newSide;
+        }
+
+        public void SetSide2(int setSide)
+        {
+            _side2 = setSide;
+        }
+
+        public void SetSide3(int setSide)
+        {
+            _side3 = setSide;
+        }
+
         // class method note include return type, public is access modifier, string is return type, TypeCheck is name of method
         public string CheckType()
         {
