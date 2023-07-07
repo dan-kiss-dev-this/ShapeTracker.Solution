@@ -8,7 +8,7 @@ namespace ShapeTracker
         static void Main()
         {
             // we will add user interface code here
-            Triangle testTriangle = new Triangle(3, 4, 5);
+            Triangle testTriangle = new Triangle(4, 4, 4);
             // Console.WriteLine(testTriangle.GetType());
             Console.WriteLine($"Side 1 of the triangle {testTriangle.Side1}");
             Console.WriteLine($"Side 2 of the triange {testTriangle.Side2}");

@@ -2,7 +2,7 @@ namespace ShapeTracker.Models
 {
     public class Triangle
     {
-        // code for triange business logic will go in here
+        // code for triangle business logic will go in here
         public int Side1;
         public int Side2;
         public int Side3;
@@ -18,7 +18,22 @@ namespace ShapeTracker.Models
         // class method note include return type, public is access modifier, string is return type, TypeCheck is name of method
         public string CheckType()
         {
-            return "Sorry I don't have an answer yet";
+            if (Side1 > (Side2 + Side3) || (Side2 > (Side1 + Side3)) || (Side3 > (Side1 + Side2)))
+            {
+                return "Not a triangle";
+            }
+            else if ((Side1 != Side2) && (Side1 != Side3) && (Side2 != Side3))
+            {
+                return "scalene triangle";
+            }
+            else if ((Side1 == Side2) && (Side1 == Side3))
+            {
+                return "equilateral triangle";
+            }
+            else
+            {
+                return "isosceles triangle";
+            }
         }
     }
 }
